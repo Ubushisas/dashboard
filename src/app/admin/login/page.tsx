@@ -1,10 +1,9 @@
 'use client'
 
-import { signIn } from 'next-auth/react'
-
 export default function LoginPage() {
-  const handleGoogleSignIn = async () => {
-    await signIn('google', { callbackUrl: '/admin/settings' })
+  const handleGoogleSignIn = () => {
+    // Mockup - no actual authentication
+    alert('This is a mockup. Authentication not implemented.')
   }
 
   return (

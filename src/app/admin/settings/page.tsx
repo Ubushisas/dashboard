@@ -1,11 +1,10 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useSession, signOut } from 'next-auth/react'
 import { Save, ChevronDown, ChevronUp, LogOut, User } from 'lucide-react'
 
 export default function SettingsPage() {
-  const { data: session } = useSession()
+  const session = null // Mockup - no authentication
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -137,7 +136,7 @@ export default function SettingsPage() {
                 {saving ? 'Saving...' : 'Save'}
               </button>
               <button
-                onClick={() => signOut({ callbackUrl: '/admin/login' })}
+                onClick={() => alert('Mockup - no authentication')}
                 className="flex items-center gap-2 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
                 title="Sign out"
               >
