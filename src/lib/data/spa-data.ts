@@ -325,6 +325,7 @@ export const patients: Patient[] = [
     totalVisits: 8,
     totalSpent: 960,
     status: 'inactive',
+    memberSince: '2024-01-15',
     medicalHistory: {
       allergies: [],
       conditions: [],
